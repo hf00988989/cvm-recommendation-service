@@ -1,0 +1,35 @@
+server:
+  port: ${PORT:8080}
+  shutdown: graceful
+
+spring:
+  application:
+    name: offers-service
+
+kong:
+  base-url: ${KONG_BASE_URL:http://localhost:9090}
+  token-path: ${KONG_TOKEN_PATH:/oauth/token}
+  recommendations-path: ${KONG_RECOMMENDATIONS_PATH:/offers/recommendations}
+  client-id: ${KONG_CLIENT_ID:demo-client}
+  client-secret: ${KONG_CLIENT_SECRET:demo-secret}
+  lang: ${KONG_LANG:EN}
+  channel: ${KONG_CHANNEL:3id}
+  connect-timeout-ms: ${KONG_CONNECT_TIMEOUT_MS:3000}
+  read-timeout-ms: ${KONG_READ_TIMEOUT_MS:5000}
+  token-expiry-skew-seconds: 30
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs

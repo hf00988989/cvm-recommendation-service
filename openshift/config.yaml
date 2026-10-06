@@ -1,0 +1,33 @@
+# Paste via Developer perspective -> + (Add) -> Import YAML.
+# The Kong values target the mock-kong Service deployed in the same project.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: offers-service-config
+data:
+  KONG_BASE_URL: "http://mock-kong:8080"
+  KONG_TOKEN_PATH: "/oauth/token"
+  KONG_RECOMMENDATIONS_PATH: "/offers/recommendations"
+  KONG_LANG: "EN"
+  KONG_CHANNEL: "3id"
+  KONG_CONNECT_TIMEOUT_MS: "3000"
+  KONG_READ_TIMEOUT_MS: "5000"
+---
+# Demo credentials for the mock only. Use real values (never committed) for a real Kong.
+apiVersion: v1
+kind: Secret
+metadata:
+  name: offers-service-secret
+type: Opaque
+stringData:
+  KONG_CLIENT_ID: "demo-client"
+  KONG_CLIENT_SECRET: "demo-secret"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mock-kong-secret
+type: Opaque
+stringData:
+  MOCK_CLIENT_ID: "demo-client"
+  MOCK_CLIENT_SECRET: "demo-secret"

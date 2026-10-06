@@ -1,0 +1,68 @@
+{
+  "status": {
+    "code": 200,
+    "message": "Success"
+  },
+  "offers": {
+    "recharge-offer": [
+      {
+        "id": "234589222",
+        "message": " Kuota 10GB 28 hari + 5000 mnt sesama + 20 mnt Semua Operator \n\n1. Harga Modal: 38000 \n2. Harga Jual: 40000 \n\n- Kuota Internet bisa digunakan di semua area\n- Pembelian paket kembali akan menggantikan sisa kuota",
+        "shortMessage": "10GB 28hari 40rb",
+        "message-encoding": "UTF-8",
+        "message-lang": "English (UK)",
+        "offerType": "stv",
+        "category": "Special Vouchers",
+        "additional-params": {
+          "productType": ["Billing"],
+          "registrationKey": ["RCRP1MB30D50K"],
+          "validity": ["30"],
+          "Price_Range": ["Mulai dari Rp40.000"],
+          "DATA_QUOTA": ["10GB"],
+          "family_name": ["Pasti Untung"],
+          "auto_renew": ["FALSE"],
+          "Benefit": ["data|Kuota InternetTri|10|28"],
+          "Description": ["100% Kuota Utama|kuota InternetTri berlaku 24 jam disemua aplikasi|Paket aktif saat ini akan terganti dan Quota tidak akan terakumulasi|Syarat dan ketentuan berlaku klik bit.ly/snk_retailIOH"],
+          "retailerIncentive": ["2000"],
+          "recommendationName": ["RT_UAT_MOBO_10GB28D40K"],
+          "offerDescription": ["10GB 28hari 40rb"],
+          "starred": ["true"],
+          "bestDeal": ["true"],
+          "promoDescription": ["10GB 28hari 40rb"],
+          "cashbackValue": ["0"]
+        },
+        "order": 1,
+        "price": 38000
+      },
+      {
+        "id": "234589223",
+        "message": " Kuota 16GB 28 hari + 5000 mnt sesama + 30 mnt Semua Operator \n\n1. Harga Modal: 46500 \n2. Harga Jual: 50000 \n\n- Kuota Internet bisa digunakan di semua area\n- Pembelian paket kembali akan menggantikan sisa kuota",
+        "shortMessage": "16GB 28hari 50rb",
+        "message-encoding": "UTF-8",
+        "message-lang": "English (UK)",
+        "offerType": "stv",
+        "category": "Special Vouchers",
+        "additional-params": {
+          "productType": ["Billing"],
+          "registrationKey": ["CVMBNSXGB28D"],
+          "validity": ["28"],
+          "Price_Range": ["Mulai dari Rp50.000"],
+          "DATA_QUOTA": ["16GB"],
+          "family_name": ["Pasti Untung"],
+          "auto_renew": ["FALSE"],
+          "Benefit": ["data|Kuota InternetTri|16|28"],
+          "Description": ["100% Kuota Utama|kuota InternetTri berlaku 24 jam disemua aplikasi|Paket aktif saat ini akan terganti dan Quota tidak akan terakumulasi|Syarat dan ketentuan berlaku klik bit.ly/snk_retailIOH"],
+          "retailerIncentive": ["3500"],
+          "recommendationName": ["RT_UAT_MOBO_16GB28D50K"],
+          "offerDescription": ["16GB 28hari 50rb"],
+          "starred": ["true"],
+          "bestDeal": ["true"],
+          "promoDescription": ["16GB 28hari 50rb"],
+          "cashbackValue": ["0"]
+        },
+        "order": 2,
+        "price": 46500
+      }
+    ]
+  }
+}
